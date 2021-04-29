@@ -156,14 +156,23 @@ all: build
 .PHONY: help
 help:
 	@echo "Make Routines:"
-	@echo " - \"\"                               equivalent to \"build\""
+#为空默认执行build
+	@echo " - \"\"                               equivalent to \"build\"" 
+#构建前端和后端文件并生成二进制文件
 	@echo " - build                            build everything"
+#构建前端文件
 	@echo " - frontend                         build frontend files"
+#构建后端文件
 	@echo " - backend                          build backend files"
+#检查前端后端文件并重构
 	@echo " - watch                            watch everything and continuously rebuild"
+#重构前端
 	@echo " - watch-frontend                   watch frontend files and continuously rebuild"
+#重构后端
 	@echo " - watch-backend                    watch backend files and continuously rebuild"
+#删除后端和集成文件
 	@echo " - clean                            delete backend and integration files"
+#删除后端、前端和集成文件
 	@echo " - clean-all                        delete backend, frontend and integration files"
 	@echo " - lint                             lint everything"
 	@echo " - lint-frontend                    lint frontend files"
